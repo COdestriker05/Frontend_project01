@@ -1,0 +1,27 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Snack's House</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+        <li>
+          <a routerLink="/">Homepage</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Profile</a>
+          <div class="menu">
+            <a routerLink="/cart-page">Orders</a>
+            <a>Logout</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span>{{ cartQuantity }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
